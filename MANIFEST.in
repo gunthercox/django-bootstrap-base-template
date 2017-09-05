@@ -3,6 +3,12 @@ include requirements.txt
 recursive-include * *.js
 recursive-include * *.css
 recursive-include * *.html
+recursive-include * *.otf
+recursive-include * *.eot
+recursive-include * *.svg
+recursive-include * *.ttf
+recursive-include * *.woff
+recursive-include * *.woff2
 
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co~]
