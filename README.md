@@ -2,6 +2,17 @@
 
 A common base template for Django web apps using Bootstrap
 
+## Why?
+
+I created this package because every time I start a new Django
+web application it requires me to set up a very similar directory
+structure for templates and static files. This Bootstrap base
+template lets me quickly start a new Django project with all of
+the assets I need already included.
+
+Additionally, this package simplifies the process of updating the
+static files used by multiple projects.
+
 ## Installation
 
 ```
