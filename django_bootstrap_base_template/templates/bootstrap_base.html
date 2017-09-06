@@ -10,20 +10,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+        {% block title %}{% endblock %}
+
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">        
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     </head>
     {% endblock %}
 
     {% block body %}
-    <body>       
+    <body>
+        {% block nav %}{% endblock %}
+
+        {% block body_content %}{% endblock %}
 
         <script src="{% static 'js/jquery.min.js' %}"></script>
         <script src="{% static 'js/popper.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
     </body>
-{% endblock %}
+    {% endblock %}
 
 </html>
 {% endblock %}
