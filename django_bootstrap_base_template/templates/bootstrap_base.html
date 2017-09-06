@@ -19,7 +19,30 @@
 
     {% block body %}
     <body>
-        {% block nav %}{% endblock %}
+        {% block nav %}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            {% block nav_content %}
+                {% block navbar_brand %}
+                    <a class="navbar-brand" href="#">Brand</a>
+                {% endblock %}
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                {% block navbar_collapse %}
+                <div class="collapse navbar-collapse" id="navbar">
+
+                    {% block navbar_collapse_nav %}{% endblock %}
+
+                </div>
+                {% endblock %}
+
+            {% endblock %}
+
+        </nav>
+        {% endblock %}
 
         {% block body_content %}{% endblock %}
 
