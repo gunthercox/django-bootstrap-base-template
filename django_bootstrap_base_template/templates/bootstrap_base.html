@@ -21,7 +21,7 @@
     {% block body %}
     <body>
         {% block nav %}
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 
             {% block nav_content %}
                 {% block navbar_brand %}
@@ -44,6 +44,8 @@
 
         </nav>
         {% endblock %}
+
+        <div class="mt-5"</div>
 
         {% block body_content %}{% endblock %}
 
