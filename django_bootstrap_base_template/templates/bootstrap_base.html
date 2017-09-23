@@ -45,9 +45,21 @@
         </nav>
         {% endblock %}
 
-        <div class="mt-5"</div>
+        <div class="mt-5"></div>
 
-        {% block body_content %}{% endblock %}
+        {% block navbar_after %}{% endblock %}
+
+        {% block body_content %}
+            <div class="container">
+                {% block container %}{% endblock %}
+            </div>
+        {% endblock %}
+
+        {% block foot %}
+            <footer>
+                {% block footer %}{% endblock %}
+            </footer>
+        {% endblock %}
 
         <script src="{% static 'js/jquery.min.js' %}"></script>
         <script src="{% static 'js/popper.min.js' %}"></script>
